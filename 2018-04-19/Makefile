@@ -10,7 +10,7 @@ build: root.tar.xz
 	docker buildx build --platform linux/arm/v7 -t takc923/raspbian:$(TAG) .
 
 root.tar.xz:
-	wget https://downloads.raspberrypi.org/raspios_lite_armhf/archive/2020-08-24-17:16/root.tar.xz
+	wget https://downloads.raspberrypi.org/raspbian_lite/archive/2018-06-29-03:25/root.tar.xz
 
 push:
 	docker push takc923/raspbian:$(TAG)
